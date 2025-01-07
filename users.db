@@ -1,0 +1,5 @@
+Tables
+com.github.gitofleonardo.simplesqlitebrowser.data.DbTable@33c28f67
+DbColumn(name=id, type=4, typeName=INTEGER, schema=  )
+DbColumn(name=username, type=12, typeName=TEXT, schema=  )
+DbColumn(name=telegram_id, type=4, typeName=INTEGER, schema=  )
