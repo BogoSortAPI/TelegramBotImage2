@@ -8,10 +8,10 @@ import logging
 import sqlite3
 import atexit
 from Tokens import Telegram_Bot, AI
-# --- Initialize the Bot ---
+# Initialize the Bot
 bot = telebot.TeleBot(Telegram_Bot)
 
-# --- Database Setup ---
+# Database Setup
 db_connection = sqlite3.connect("users.db", check_same_thread=False)
 db_cursor = db_connection.cursor()
 db_cursor.execute("""
@@ -21,16 +21,14 @@ CREATE TABLE IF NOT EXISTS users (
     telegram_id INTEGER UNIQUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
-""")
+""") # Creating table users with Username and telegram_id keys
 db_connection.commit()
-
 @atexit.register
 def close_db_connection():
     db_connection.close()
     logging.info("Database connection closed.")
 
-# --- API Details ---
-TEXT_API_URL = "https://api-inference.huggingface.co/models/openai-community/gpt2"
+# API Details
 IMAGE_API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3.5-large"
 headers = {"Authorization": f"Bearer {AI}"}
 # These variables will play a huge role in stylization
