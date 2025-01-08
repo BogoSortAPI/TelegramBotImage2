@@ -71,10 +71,13 @@ If you do not like it, then click regenerate. But if it is still garbage then yo
 If you want to stylize this image then you can click stylize button. Select your preferred style and image will be regenerated according to this style. 
 
 What am I going to do next? SOON Updates.
+
 Code stuffs: No one cares.
 -	Create content variables outside of functions to make them global and reduce code.
 -	If message of user is not text, then handle error and send user that he has to send a prompt.
--	Use generate_images() function inside of apply_style. 
+-	Use generate_images() function inside of apply_style.
+
+Content stuffs
 -	Create /style command where you can stylize your picture with whatever style you want.
 -	Create double stylizing function.
 -	Add AI that will generate prompts (He can suggest or improve user_prompts).
