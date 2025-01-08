@@ -1,4 +1,4 @@
-# TelegramBotImage2
+# TelegramBotImageFREE
 This is a Telegram bot that can generate an image according to prompt.
 
 Here is huge a description of my code. 
