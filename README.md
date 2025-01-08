@@ -62,11 +62,7 @@ How to use this bot?
 
 Start the bot and select preferred language.
 
-Right a promt
-
-Wait until image is generated
-
-Now give feedback according to the image
+Write a promt. Wait until image is generated. Now give feedback according to the image.
 
 If it satisfies, then click It is awesome and then optionally you can write a new prompt. 
 
